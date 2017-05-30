@@ -1,0 +1,90 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    line-height: 1.6em;
+}
+
+.subtask {
+    margin: 20px 0;
+    border: 1px solid lightblue;
+    border-radius: 8px;
+    padding: 16px;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    color: white;
+}
+
+ul>li {
+    list-style-type: none;
+    padding: 20px;
+    float: left;
+    background-color: lightpink;
+    width: calc(100%/6);
+}
+
+ul>li img {
+    margin: 0 auto;
+    display: block;
+}
+
+.clearfix {
+    clear: both;
+}
+
+
+/* Вашият CSS от тук надолу */
+
+#subtask2 ul li:nth-child(even) {
+    background-color: lightblue;
+}
+
+#subtask3 ul li:hover {
+    transform: rotate(360deg);
+    transition: all 1s ease-in-out;
+    background-color: lightblue;
+}
+
+#subtask4 ul li::after {
+    content: "";
+    position: absolute;
+    t
+}
+
+#subtask5 ul li::before {
+    content: "IMAGIN THAT";
+    position: absolute;
+    text-align: center;
+    }
+
+@media (max-width: 399px) {
+    ul li {
+        width: 100%;
+    }
+
+}
+
+@media (min-width: 400px) and (max-width: 599px) {
+    ul li {
+        width:calc(100%/2)
+    }
+}
+
+@media (min-width: 600px) and (max-width: 999px) {
+    ul li {
+
+        width:calc(100%/3);
+    }
+}
+
+@media (min-width: 1000px) {
+    ul img {
+        max-width: 100%;
+    }
+}
